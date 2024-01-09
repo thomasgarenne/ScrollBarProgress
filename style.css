@@ -1,0 +1,69 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	display: flex;
+}
+
+li {
+	list-style-type: none;
+	padding: 0 10px;
+}
+
+button {
+	padding: 4px 20px;
+	border-radius: 10px;
+	background-color: #378d76;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.container {
+	height: 2000px;
+	background: linear-gradient(to bottom, #515151, #000000);
+}
+
+/** Navigation */
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	background-color: aliceblue;
+	transition: top 0.2s ease-in-out;
+	z-index: 999;
+}
+
+/** Progress Bar */
+.progress-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 5px;
+	background-color: #378d76;
+	transition: width 0.2s ease;
+}
+
+/** Toast */
+.toast {
+	visibility: hidden;
+	position: fixed;
+	top: 50%;
+	right: calc(50% - 400px);
+	transform: translate(-50%, -50%);
+	height: 200px;
+	width: 400px;
+	padding: 20px;
+	background-color: #378d76;
+	border-radius: 10px;
+}
