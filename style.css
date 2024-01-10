@@ -59,11 +59,29 @@ button:hover {
 	visibility: hidden;
 	position: fixed;
 	top: 50%;
-	right: calc(50% - 400px);
+	left: 50%;
 	transform: translate(-50%, -50%);
 	height: 200px;
 	width: 400px;
 	padding: 20px;
-	background-color: #378d76;
+	background-color: #5effd4;
 	border-radius: 10px;
+}
+
+.toast-bar {
+	width: 100%;
+	height: 5px;
+	background: linear-gradient(
+		to right,
+		#4cd964,
+		#5ac8fa,
+		#007aff,
+		#34aadc,
+		#5856d6,
+		#ff2d55
+	);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-radius: 5px;
 }
